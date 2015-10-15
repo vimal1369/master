@@ -1,0 +1,21 @@
+<?php 
+	  mysql_connect('localhost','unimafc105_del','Delivery123');
+  mysql_select_db('unimafc105_delivery'); 
+ 	$country=$_REQUEST['countryv'];
+    $qry="select resender_feature.* , countries.countryname , countries.symbol ,countries.code  from resender_feature 
+	 inner join  countries  on resender_feature.countryid=countries.countryid where resender_feature.countryid=$country and resender_feature.servicename='consumer'"; 
+	$k=mysql_query($qry);
+	$nr=mysql_affected_rows();	 
+	if($nr>0)
+	{
+		while($row=mysql_fetch_assoc($k))		
+		{
+			echo " $row[basicsystem] , $row[separatestand] , $row[addinstall] ,$row[optionnewspaper] , $row[isolatedhousing] ,$row[colorhousing], $row[enlargementmailbox] , $row[vatcharges], $row[oneoffcontribute],$row[preorderfees],$row[monthlysub] ,$row[symbol] , $row[code] , $row[servicename]";
+		}		 
+	}
+	else
+	{
+	   echo "Not available in this country";
+	}
+
+?>
