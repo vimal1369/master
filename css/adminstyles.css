@@ -1,0 +1,34 @@
+ 
+ 
+.wp-admin .viewfeatures h2{display:block;}
+.viewfeatures h2{display:none;}
+.viewfeatures .form-group {padding:5px 10px; width:100%; font-size: 14px;    margin: 0 0 5px; color:#000;}
+#country {
+    float: right;
+}
+.viewfeatures .form-group label  { width:42%; color:000 !important; font-size: 14px !important;}
+.viewfeatures .form-group .price { text-align:center; width:55%;float: right; display:inline-block;}
+.viewfeatures .form-group .price select { padding:6px;}
+ .accept label{width:90% !important;}
+.viewfeatures .form-group .upborder{border-top:1px solid #4a4a4a;}
+.viewfeatures .form-group .updownborder{border-top:1px solid #4a4a4a; border-bottom:1px solid #4a4a4a;}
+.form-group label { width:180px;  display:inline-block;}
+ .infoform .form-group {padding:5px 10px; width:100%; font-size: 14px;    margin: 0 0 5px; color:#000;}
+ .infoform .form-group input[type="submit"] { width:30% !important;}
+
+ .addfeatures input:required:invalid, .infoform input:required:invalid, .infoform input:focus:invalid { 
+background: rgba(255, 255, 255, 1) url("../images/thumbdown.png") no-repeat scroll right center / contain ;   
+ border: 1px solid #ccc;    padding: 3px 10px;    width: 29%;
+}
+  .addfeatures  input:required:valid,
+ .infoform input:required:valid {
+    background: rgba(255, 255, 255, 1) url(../images/thumbup.png)no-repeat scroll right center / contain ; 
+ border: 1px solid #ccc;    padding: 3px 10px; width: 29%;
+  }
+.infoform .form-group textarea { width: 29%;}
+  .viewpayment {text-align:center; margin:0px auto;}
+  .viewpayment .image img {width:150px; height:100px; float:none; margin:0px auto;}
+  .viewpayment .viewprice { font-size:24px;padding:12px 0 2px 0;}
+  .errormsg {border: 1px dashed red;  padding: 0 10px;text-align: center; background:wheat; width: 33%;}
+  .updatedmsg {border: 1px dashed green;  padding: 0 10px;text-align: center; background:wheat; width: 33%;}
+  .errormsg p , .updatedmsg p {font-size:15px; font-weight:600;} 

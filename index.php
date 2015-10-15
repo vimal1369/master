@@ -5,6 +5,7 @@ Plugin URI:
 Description: Resender Form
 Author: Sharp Web Technologies
 Author URI:  
+
 */
   mysql_connect('localhost','unimafc105_del','Delivery123');
   mysql_select_db('unimafc105_delivery'); 
